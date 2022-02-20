@@ -210,7 +210,7 @@ footer{
             flex-direction: column;
             position: relative;
         }
-        nav box-icon {
+        nav img {
             display: block;
             position: absolute;
             top: 18px;
