@@ -28,6 +28,15 @@ header{
     align-items: center;
     padding: 30px 5%;
 }
+nav {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.head{
+    margin-left: 30px;
+    padding: 10px;
+}
 .logo{
     cursor: pointer;
 }
@@ -43,6 +52,9 @@ header{
 }
 .bar li a:hover{
     color:#b5bbd4 ;
+}
+.menu{
+    display: none;
 }
 
 
@@ -64,7 +76,7 @@ button:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* width: 85%; */
+     width: 85%;
     margin: auto;
     padding-top: 30px;
 
@@ -189,13 +201,41 @@ footer{
   .attribution a { 
       color: hsl(228, 45%, 44%); }
 
+     
 
 
       @media only screen and (max-width: 768px) {
         /* For mobile phones: */
-        [class*="col-1-of-2"] {
-          width: 100%;
+        nav{
+            flex-direction: column;
+            position: relative;
         }
+        nav box-icon {
+            display: block;
+            position: absolute;
+            top: 18px;
+            right: 32px;
+        }
+        nav ul {
+            background: whitesmoke;
+            display: none;
+        }
+    
+        .showmenu {
+            display: block;
+        }
+        nav ul li {
+            display: block;
+            padding: 2% 0;
+        }
+    
+        .row{
+            flex-direction: column;
+        }
+    
+    
+        
+
       }
 
       

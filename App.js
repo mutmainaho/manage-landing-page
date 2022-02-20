@@ -1,3 +1,9 @@
+
+document.querySelector('#menu').addEventListener('click',()=>{
+  document.querySelector('nav ul a').classList.toggle('showmenu')
+})
+
+
 let sendForm = document.getElementById("submit");
 let mail = document.getElementById("newsletter");
 let errorMessage = document.querySelector(".errormessage");
