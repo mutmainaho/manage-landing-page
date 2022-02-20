@@ -53,7 +53,7 @@ nav {
 .bar li a:hover{
     color:#b5bbd4 ;
 }
-.menu{
+#menu{
     display: none;
 }
 
