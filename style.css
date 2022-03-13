@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@100;400;700&family=Bellefair&display=swap');
 
 *{
     padding: 0;
@@ -9,37 +9,242 @@
 }
 body{
     background-image: url("./images/bg-tablet-pattern.svg"); 
-    
+    font-family: 'Barlow', sans-serif;
+    overflow-x: hidden;
     
 }
-html {
-    font-size: 62.5%; }
 
-li,a,button{
-    font-size: 16px;
-    font-weight: 400;
-    text-decoration: none;
-    color:  gray;
 
-}
+
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 5%;
 }
-nav {
-    padding: 20px 50px;
+
+nav ul li .navlink {
     display: flex;
     justify-content: space-between;
+    list-style: none;
+    font-family: 'Barlow', sans-serif;
+    text-decoration: none;
+    color:  gray;
+    padding: 0.25rem;  
 }
-.head{
-    margin-left: 30px;
-    padding: 10px;
+nav ul li{
+    list-style: none;
 }
+
+
+nav li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+nav li a{
+    transition: all 0.3s ease 0s;
+}
+nav li a:hover{
+    color:#b5bbd4 ;
+}
+
 .logo{
     cursor: pointer;
 }
+
+.hamburgerMenu{
+    display: none;
+}
+    
+
+button{
+    padding: 9px 25px;
+    background-color: #f25f3a;
+    color: honeydew;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+}
+button:hover,button:active {
+    background-color:hsl(12, 77%, 70%) ;
+}
+ main{ 
+    width: 90%;
+    margin: 90px auto; 
+}
+.quickInfo{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.quickInfo h1{
+    padding-bottom: 30px;
+    font-size: 60px;
+    color: hsl(228, 39%, 23%);
+    
+}
+.quickInfo p{
+    padding-bottom: 30px;
+    color: grey;
+}
+.quickInfoText{
+    padding-top: 50px;
+    max-width: 30rem;
+}
+.quickInfo h2{
+    padding-bottom: 30px;
+    font-size: 40px;
+    color: hsl(228, 39%, 23%);
+    
+}
+.quickInfo2{
+    display: flex;
+    justify-content: space-around;
+
+}
+.quickInfo2 p{
+    padding-bottom: 30px;
+    color: grey;
+}
+.quickInfo2 h2{
+    padding-bottom: 30px;
+    font-size: 40px;
+    color: hsl(228, 39%, 23%);
+    
+}
+.productInfoText{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.productInfoText h3{
+    font-size: 20px;
+    color: hsl(228, 39%, 23%);
+}
+.num{
+    display: inline;
+    color: wheat;
+    background-color:#f25f3a ;
+    padding: 0 25px;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 15px;
+
+}
+
+article h1{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    color: hsl(228, 39%, 23%);
+    font-size: 40px;
+}
+.reviews{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 4%;
+    margin-bottom: 40px;
+    padding-top: 80px;
+}
+.review{
+    background-color: #f8f8f8;
+}
+.review{
+    padding: 0 1.2rem 1.2rem 1.2rem;
+}
+.review p:first-of-type{
+    color: hsl(228, 39%, 23%);
+    font-weight: bold;
+    margin-top: 2px;
+    padding:5px;
+}
+.review img{
+    height: 60px;
+    width: 60px;
+    position: relative;
+    bottom: 25px;
+}
+
+
+@media only screen and (max-width: 768px){
+
+    header button{
+        display: none;
+    }
+    .hamburgerMenu{
+        display: block;
+    }
+    header{
+        justify-content: space-between;
+        margin: 20px auto;
+        margin-left: 10px;
+    }
+    nav{ 
+        display: none;}
+
+    
+    nav{
+        background-color: white;
+        position: absolute;
+        margin: auto;
+        border-radius: 0.25rem;
+        top: 7rem;
+        left: 1rem;
+        right: 1rem;
+        box-shadow: 0 0 100px rgb(56, 56, 56);
+
+    }
+    nav ul li {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+    .quickInfo{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .quickInfo button{
+        margin-bottom: 50px;
+    }
+    .productInfo{
+        margin: auto;
+    }
+    .quickInfo2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .quickInfo2 h2{
+        font-size: 30px;
+    }
+    .productInfoText h3{
+        font-size: 15px;
+    }
+    .reviews{
+        flex-direction: column;
+    }
+    .review{
+        margin-top: 35px;
+    }
+    article h1{
+        font-size: 20px;
+    }
+
+
+}
+
+
+/*  
+
 .bar{
     list-style: none;
 }
@@ -205,37 +410,15 @@ footer{
 
 
       @media only screen and (max-width: 768px) {
-        /* For mobile phones: */
-        nav{
-            flex-direction: column;
+        
+       
+        header{
             position: relative;
         }
-        nav img {
-            display: block;
-            position: absolute;
-            top: 18px;
-            right: 32px;
-        }
-        nav ul {
-            background: whitesmoke;
-            display: none;
-        }
-    
-        .showmenu {
-            display: block;
-        }
-        nav ul li {
-            display: block;
-            padding: 2% 0;
-        }
-    
-        .row{
+        nav{
             flex-direction: column;
         }
-    
-    
-        
 
       }
 
-      
+      */

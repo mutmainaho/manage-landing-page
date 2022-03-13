@@ -1,7 +1,13 @@
-
-document.querySelector('#menu').addEventListener('click',()=>{
-  document.querySelector('nav ul a').classList.toggle('showmenu')
+$(".hamburgerMenu").click(function(){
+  $("nav").toggle();
 })
+
+
+
+
+
+
+
 
 
 let sendForm = document.getElementById("submit");
@@ -25,4 +31,4 @@ let valide = (event) => {
     }
   };
   
-  sendForm.addEventListener("click", valide);
+  //sendForm.addEventListener("click", valide);
