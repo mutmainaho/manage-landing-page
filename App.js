@@ -31,4 +31,4 @@ let valide = (event) => {
     }
   };
   
-  //sendForm.addEventListener("click", valide);
+  sendForm.addEventListener("click", valide);

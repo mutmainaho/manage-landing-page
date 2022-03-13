@@ -169,6 +169,88 @@ article h1{
     position: relative;
     bottom: 25px;
 }
+article{
+    text-align: center;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+    
+}
+
+.team{
+    background-color: hsl(12, 88%, 59%);
+    height: 200px;
+    padding-top: 50px;
+    margin-top: 20px;
+    
+}
+.team2{
+    color: honeydew;
+    width: max-content;
+    font-size: 35px;
+}
+.white{
+    background-color: honeydew;
+    color: hsl(12, 88%, 59%);
+
+}
+
+footer{
+    background-color: hsl(233, 12%, 13%);    
+}
+.info{
+    margin-left: 40px;
+    padding: 20px;
+    
+   
+}
+#socials li {
+    display: inline-block;
+    padding-top: 80px;
+  }
+  #socials li img{
+      margin: 5px;
+  }
+  #quick-links li  {
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 5px;
+  }
+  #quick-links li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #quick-links li a:hover{
+      color: hsl(12, 88%, 59%);
+  }
+
+  .foot{
+     margin-right: 30px; 
+  }
+  input{
+      border: none;
+      border-radius: 15px;
+      padding: 12px 25px;
+  }
+  .errormessage{
+      color: red;
+  }
+
+  .copy{
+      padding-top: 80px;
+  }
+  div.attribution { 
+      font-size: 16px;
+     text-align: center; 
+      color: honeydew;
+      padding-bottom: 10px;    }
+  .attribution a { 
+      color: hsl(228, 45%, 44%); }
+
 
 
 @media only screen and (max-width: 768px){
@@ -239,8 +321,23 @@ article h1{
         font-size: 20px;
     }
 
+    
+    
+    
+    
+    
+      }
+      @media only screen and (max-width: 485px){
+        .info{
+            flex-direction: column-reverse;
+        }
+        .row{
+            display: inline-block;
+    
+        }
+      }
+      
 
-}
 
 
 /*  
